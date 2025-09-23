@@ -1,3 +1,5 @@
+import Navbar from '@/components/navbar/Navbar'
+import NavbarSocket from '@/components/navbar/NavbarSocket'
 import styles from '@/styles/globals.css'
 
 export const metadata = {
@@ -9,8 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body>
-        {/* Navbar socket */}
-        {/* Navbar */}
+        <NavbarSocket />
+        <Navbar />
         {children}
         {/* Testimonials */}
         {/* Footer */}

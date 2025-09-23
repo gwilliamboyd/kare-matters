@@ -1,0 +1,112 @@
+/* Desktop */
+/* Navbar socket */
+.socketMaster {
+  width: 100%;
+  height: 40px;
+  background-color: #253035;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 5;
+  padding: 1.5em 8em;
+}
+
+.socketWrapper {
+  width: 95%;
+  color: #ffffff;
+  transition: 0.3s ease color;
+}
+
+.socketWrapper .navLinkContact a:hover {
+  color: #ffb3b0;
+}
+
+/* Navbar */
+.master {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.innerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8em;
+}
+
+/* Causes logo to overlay hero img */
+.logoContainer {
+  display: flex;
+  gap: 6em;
+}
+.logoImage {
+  margin-bottom: -24px;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2em;
+}
+
+.contactLeft {
+  display: flex;
+  gap: 2em;
+}
+
+.navLinkMain a,
+.navLinkContact a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.navLinkContact a {
+  font-size: 14px;
+}
+
+.navLinkMain a:hover,
+.navLinkContact a:hover {
+  color: #ffffff;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.socialIcon svg {
+  fill: var(--icon-fill, #000000);
+  transition: fill 0.3s ease;
+}
+
+.socialIcon:hover svg {
+  fill: #ffffff;
+}
+
+.socketWrapper .socialIcon svg {
+  fill: var(--icon-fill, #ffffff);
+  transition: fill 0.3s ease;
+}
+
+/* Social icons white on hover */
+.socketWrapper .socialIcon:hover svg {
+  fill: #ffb3b0;
+}
