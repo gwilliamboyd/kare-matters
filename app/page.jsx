@@ -1,5 +1,10 @@
+import HomeHero from '@/components/heroes/HomeHero'
 import styles from '@/styles/page.module.css'
 
 export default function Home() {
-  return <main className={styles.homeMaster}></main>
+  return (
+    <main className={styles.homeMaster}>
+      <HomeHero />
+    </main>
+  )
 }

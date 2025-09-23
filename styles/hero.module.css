@@ -1,0 +1,7 @@
+.homeHeroMaster {
+  width: 100%;
+  background-image: url('../public/gallery-images/year-4/y4-05.JPG');
+  background-size: cover;
+  background-position: top-center;
+  height: 600px;
+}
