@@ -1,3 +1,5 @@
+import Footer from '@/components/footer/Footer'
+import FooterSocket from '@/components/footer/FooterSocket'
 import Navbar from '@/components/navbar/Navbar'
 import NavbarSocket from '@/components/navbar/NavbarSocket'
 import styles from '@/styles/globals.css'
@@ -15,8 +17,8 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         {/* Testimonials */}
-        {/* Footer */}
-        {/* Footer socket */}
+        <Footer />
+        <FooterSocket />
       </body>
     </html>
   )

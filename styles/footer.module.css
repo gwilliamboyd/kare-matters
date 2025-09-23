@@ -1,0 +1,99 @@
+.footerMaster {
+  width: 100vw;
+  padding: 3em 0;
+  background-color: #3682ae;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerWrapper,
+.footerSocketWrapper {
+  width: 60%;
+}
+
+.footerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 0.6em;
+}
+
+.contactText {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5em;
+  transition: 0.3s ease color;
+}
+
+.contactText:hover {
+  color: #000000;
+}
+
+.navLinkMain a,
+.navLinkContact a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navLinkMain a:hover,
+.navLinkContact a:hover {
+  color: #000000;
+}
+
+.socialsWrapper {
+  display: flex;
+  gap: 2em;
+}
+
+.socials {
+  display: flex;
+  gap: 1em;
+}
+
+.socialIcon svg {
+  fill: var(--icon-fill, #ffffff);
+  transition: fill 0.3s ease;
+}
+
+/* Social icons white on hover */
+.socialIcon:hover svg {
+  fill: #000000;
+}
+
+.footerSocketMaster {
+  width: 100%;
+  padding: 2.2em 0;
+  background-color: #253035;
+  font-size: 12px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSocketWrapper {
+  display: flex;
+  justify-content: space-between;
+}
