@@ -5,3 +5,10 @@
   justify-content: center;
   color: #ffffff;
 }
+
+.pinkDivider {
+  width: 340px;
+  height: 8px;
+  background-color: #eda0a0;
+  margin: 2.5em 0 3.5em;
+}
