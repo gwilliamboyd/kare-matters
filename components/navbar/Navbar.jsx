@@ -1,3 +1,5 @@
+'use client'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import styles from '../../styles/navbar.module.css'
 // import CTAButton from '../CTAButton'
@@ -5,10 +7,19 @@ import styles from '../../styles/navbar.module.css'
 // import NavlinkContact from './nav-links/NavlinkContact'
 import NavlinkMain from './nav-links/NavlinkMain'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
+  // check URL to determine nav color
+  const pathName = usePathname()
+  const [isHome, setIsHome] = useState(true)
+
+  useEffect(() => {
+    setIsHome(pathName === '/')
+  }, [pathName])
+
   return (
-    <nav className={`${styles.master}`}>
+    <nav className={isHome ? styles.master : styles.pageMaster}>
       <div className={styles.innerContainer}>
         <div className={styles.logoContainer}>
           <Link href={'/'}>
@@ -24,7 +35,7 @@ const Navbar = () => {
             <NavlinkMain
               styles={styles}
               linkText={'About Us'}
-              url={'#about-us'}
+              url={'/about-us'}
             />
             <NavlinkMain
               styles={styles}
