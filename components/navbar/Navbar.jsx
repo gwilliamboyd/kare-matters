@@ -8,6 +8,8 @@ import styles from '../../styles/navbar.module.css'
 import NavlinkMain from './nav-links/NavlinkMain'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import NavlinkContact from './nav-links/NavlinkContact'
+import SocialIcon from '../SocialIcon'
 
 const Navbar = () => {
   // check URL to determine nav color
@@ -39,19 +41,44 @@ const Navbar = () => {
             />
             <NavlinkMain
               styles={styles}
-              linkText={'FAQ'}
-              url={'#faq'}
+              linkText={'Work With Us'}
+              url={'#'}
             />
             <NavlinkMain
               styles={styles}
               url={'/gallery'}
               linkText={'Gallery'}
             />
-            <NavlinkMain
-              styles={styles}
-              url={'/testimonials'}
-              linkText={'Testimonials'}
-            />
+          </div>
+          <div className={styles.contactContainer}>
+            <div className={styles.contactLeft}>
+              <NavlinkContact
+                styles={styles}
+                linkText={'214-952-8865'}
+                url={'tel:2149528865'}
+              />
+              <NavlinkContact
+                styles={styles}
+                linkText={'contact@beckashouse.com'}
+                url={'mailto:contact@beckashouse.com'}
+              />
+            </div>
+            <div className={styles.socials}>
+              <SocialIcon
+                styles={styles}
+                url={'https://www.facebook.com'}
+                fillColor={'#FFFFFF'}
+                site={'facebook'}
+                dimensions={36}
+              />
+              <SocialIcon
+                styles={styles}
+                url={'https://www.instagram.com'}
+                fillColor={'#FFFFFF'}
+                site={'instagram'}
+                dimensions={36}
+              />
+            </div>
           </div>
         </div>
       </div>
