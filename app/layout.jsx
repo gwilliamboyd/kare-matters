@@ -2,6 +2,7 @@ import Footer from '@/components/footer/Footer'
 import FooterSocket from '@/components/footer/FooterSocket'
 import Navbar from '@/components/navbar/Navbar'
 import NavbarSocket from '@/components/navbar/NavbarSocket'
+import TestimonialsContainer from '@/components/testimonials/TestimonialsContainer'
 import styles from '@/styles/globals.css'
 
 export const metadata = {
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
         <NavbarSocket />
         <Navbar />
         {children}
-        {/* Testimonials */}
+        <TestimonialsContainer />
         <Footer />
         <FooterSocket />
       </body>
