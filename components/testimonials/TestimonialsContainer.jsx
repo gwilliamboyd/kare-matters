@@ -17,7 +17,7 @@ const TestimonialsContainer = () => {
   const [isHome, setIsHome] = useState(true)
 
   useEffect(() => {
-    setIsHome(pathName === '/')
+    setIsHome(pathName === '/' || pathName === '/gallery')
   }, [pathName])
 
   // handle testimonial scroll and auto-scroll
@@ -44,14 +44,22 @@ const TestimonialsContainer = () => {
   }, [currentIndex, entries.length])
 
   return (
-    <div className={styles.testimonialsMaster}>
+    <div
+      className={
+        isHome ? styles.testimonialsMaster : styles.testimonialsMasterDark
+      }>
       <div className={styles.testimonialsWrapper}>
         <h1 className={styles.testimonialsHeader}>Testimonials</h1>
-        <div className={styles.testimonialsInnerWrapper}>
+        <div
+          className={
+            isHome
+              ? styles.testimonialsInnerWrapper
+              : styles.testimonialsInnerWrapperDark
+          }>
           {/* Previous testimonial */}
           <FontAwesomeIcon
             onClick={() => entryHandler('-')}
-            className={styles.chevronIcon}
+            className={isHome ? styles.chevronIcon : styles.chevronIconDark}
             icon={faChevronLeft}
           />
           {/* Entries section */}
@@ -63,7 +71,7 @@ const TestimonialsContainer = () => {
           {/* Next testimonial */}
           <FontAwesomeIcon
             onClick={() => entryHandler('+')}
-            className={styles.chevronIcon}
+            className={isHome ? styles.chevronIcon : styles.chevronIconDark}
             icon={faChevronRight}
           />
         </div>

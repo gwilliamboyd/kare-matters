@@ -88,7 +88,7 @@
 
 .navLinkMain a:hover,
 .navLinkContact a:hover {
-  color: #ffffff;
+  color: #ffb3b0;
 }
 
 .socials {
@@ -103,7 +103,7 @@
 }
 
 .socialIcon:hover svg {
-  fill: #ffffff;
+  fill: #ffb3b0;
 }
 
 .socketWrapper .socialIcon svg {

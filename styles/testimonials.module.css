@@ -1,11 +1,20 @@
-.testimonialsMaster {
-  background-color: #253035;
-  color: #ffffff;
+.testimonialsMaster,
+.testimonialsMasterDark {
   padding: 4em 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.testimonialsMaster {
+  background-color: #253035;
+  color: #ffffff;
+}
+
+.testimonialsMasterDark {
+  background-color: #ffffff;
+  color: #253035;
 }
 
 .testimonialsHeader {
@@ -20,7 +29,8 @@
   gap: 4em;
 }
 
-.testimonialsInnerWrapper {
+.testimonialsInnerWrapper,
+.testimonialsInnerWrapperDark {
   height: 360px;
   padding: 4em 1em;
   border: 3px solid rgba(255, 255, 255, 0.65);
@@ -31,11 +41,21 @@
   gap: 6em;
 }
 
+.testimonialsInnerWrapper {
+  border: 3px solid rgba(255, 255, 255, 0.65);
+}
+
+.testimonialsInnerWrapperDark {
+  border: 3px solid rgba(0, 0, 0, 0.65);
+}
+
 .chevronIcon {
   font-size: 2em;
   color: rgba(255, 255, 255, 0.65);
-  /* width: 30px;
-  height: 30px; */
+}
+
+.chevronIconDark {
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .chevronIcon:hover {
