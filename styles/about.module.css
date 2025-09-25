@@ -1,0 +1,44 @@
+.aboutMaster {
+}
+.aboutDarkWrapper {
+  width: 100vw;
+  padding: 8em 0 8em 4em;
+  background-color: #253035;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+  color: #ffffff;
+}
+
+.h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.h5,
+.h5Pink {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.h5Pink {
+  color: #ffb3b0;
+}
+
+.h5Pink a {
+  text-decoration: underline;
+}
+
+.paragraph {
+  font-size: 18px;
+}
+
+.aboutInfo {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3em;
+}

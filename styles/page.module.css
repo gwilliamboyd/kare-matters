@@ -102,3 +102,15 @@
   text-decoration: underline;
   font-size: 20px;
 }
+
+.interiorH2Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.interiorH2 {
+  align-self: center;
+  font-weight: 400;
+  font-size: 36px;
+}
