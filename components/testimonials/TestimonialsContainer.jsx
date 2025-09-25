@@ -14,19 +14,13 @@ const TestimonialsContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const entryHandler = operation => {
-    // prevent setting index < 0
-    if (operation === '-' && currentIndex - 1 < 0) {
-      return
-    }
-    // prevent setting index greater than array length
-    else if (operation === '+' && currentIndex + 1 > entries.length - 1) {
-      return
-    }
-
-    // determine whether to increment or decrement
-    operation === '+'
-      ? setCurrentIndex(currentIndex + 1)
-      : setCurrentIndex(currentIndex - 1)
+    setCurrentIndex(prev => {
+      if (operation === '+') {
+        return prev + 1 < entries.length ? prev + 1 : 0 // loop forward
+      } else {
+        return prev - 1 >= 0 ? prev - 1 : entries.length - 1 // loop backward
+      }
+    })
   }
 
   // auto scroll testimonials every 8 sec
@@ -35,9 +29,9 @@ const TestimonialsContainer = () => {
       setCurrentIndex(prev => (prev + 1 < entries.length ? prev + 1 : 0))
     }, 8000)
 
-    // clear timer when testimonial changes
+    // clear interval when currentIndex changes → resets timer
     return () => clearInterval(interval)
-  }, [entries.length])
+  }, [currentIndex, entries.length])
 
   return (
     <div className={styles.testimonialsMaster}>
