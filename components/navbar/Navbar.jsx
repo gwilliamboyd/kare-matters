@@ -42,7 +42,7 @@ const Navbar = () => {
             <NavlinkMain
               styles={styles}
               linkText={'Work With Us'}
-              url={'#'}
+              url={'/work-with-us'}
             />
             <NavlinkMain
               styles={styles}

@@ -1,0 +1,78 @@
+.workMaster {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.workWrapper {
+  padding: 3em 6em;
+  border-top: 8px solid #3682ae;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.workWrapperContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.workWrapperInner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.workLines {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.workTopContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.workLines {
+  display: flex;
+  flex-direction: column;
+}
+
+.workLineWrapper {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.workLineWrapper img {
+  width: 70px;
+  height: auto;
+}
+
+.workLineText > em {
+  color: #3682ae;
+}
+
+.workImagesWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5em;
+}
+
+.workImage {
+  width: 320px;
+  height: 233px;
+}
+
+.workParagraph {
+  font-size: 18px;
+}
+
+.workParagraph > em {
+  color: #3682ae;
+  font-weight: 700;
+}
