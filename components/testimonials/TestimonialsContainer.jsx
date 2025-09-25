@@ -9,8 +9,18 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 const TestimonialsContainer = () => {
+  // check URL to determine nav color
+  const pathName = usePathname()
+  const [isHome, setIsHome] = useState(true)
+
+  useEffect(() => {
+    setIsHome(pathName === '/')
+  }, [pathName])
+
+  // handle testimonial scroll and auto-scroll
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const entryHandler = operation => {
