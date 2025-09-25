@@ -7,7 +7,7 @@ const BulletContainer = () => {
     <div className={styles.bulletContainerMaster}>
       <BulletList />
       <Image
-        src={'/gallery-images/year-4/y4-07.jpg'}
+        src={'/gallery-images/y4-07.jpg'}
         width={800}
         height={600}
         alt='Purpose-driven homes photo'
