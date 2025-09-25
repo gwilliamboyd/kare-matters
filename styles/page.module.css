@@ -87,7 +87,7 @@
   width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 3em;
+  column-gap: 5em;
 }
 
 .visionCol {
