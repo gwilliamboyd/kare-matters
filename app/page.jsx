@@ -2,6 +2,7 @@ import HomeHero from '@/components/heroes/HomeHero'
 import BulletContainer from '@/components/misc/BulletContainer'
 import BulletList from '@/components/misc/BulletList'
 import PinkDivider from '@/components/misc/PinkDivider'
+import YourVision from '@/components/misc/your-vision/YourVision'
 import styles from '@/styles/page.module.css'
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
           </span>
         </h5>
       </div>
+      <YourVision />
     </main>
   )
 }
