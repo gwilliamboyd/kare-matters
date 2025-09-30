@@ -6,6 +6,13 @@ import WorkFourImages from '@/components/work-with-us/WorkFourImages'
 import WorkIconLine from '@/components/work-with-us/WorkIconLine'
 import styles from '@/styles/work.module.css'
 
+export const metadata = {
+  title:
+    'Let us Help | Designing Beautiful Futures for Adults with Special Needs',
+  description:
+    'Are you a parent/legal guardian/sibling/friend of an adult with special needs? We specialize in helping families determine the best options for custom supported caregiving and/or companion care housing for people living with a disability—allowing you to breathe a sigh of relief.',
+}
+
 const page = () => {
   return (
     <div className={styles.workMaster}>
