@@ -9,7 +9,7 @@ import styles from '@/styles/work.module.css'
 const page = () => {
   return (
     <div className={styles.workMaster}>
-      <PageHero heading={'Work With Us'} />
+      <PageHero heading={'Let us Help'} />
       <div className={styles.workWrapper}>
         <div className={styles.workWrapperContainer}>
           <div className={styles.workWrapperInner}>
@@ -45,8 +45,8 @@ const page = () => {
           </div>
           <p className={styles.workParagraph}>
             At <em style={{ color: '#EDA0A0' }}>KARE MATTERS</em>, we combine
-            our professional experience to create done-for-you consulting—so you
-            can design a beautiful future - on your terms.
+            our professional experience to create done-for-you consulting—so
+            together we can help design a beautiful future - on your terms.
           </p>
         </div>
       </div>

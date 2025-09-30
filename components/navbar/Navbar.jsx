@@ -41,8 +41,8 @@ const Navbar = () => {
             />
             <NavlinkMain
               styles={styles}
-              linkText={'Work With Us'}
-              url={'/work-with-us'}
+              linkText={'Let us Help'}
+              url={'/let-us-help'}
             />
             <NavlinkMain
               styles={styles}

@@ -35,13 +35,13 @@ const Footer = () => {
           <div className={`${poppins.className} ${styles.linksWrapper}`}>
             <NavlinkMain
               styles={styles}
-              url={'#about-us'}
-              linkText={'About'}
+              url={'/about-us/'}
+              linkText={'About Us'}
             />
             <NavlinkMain
               styles={styles}
-              url={'#faq'}
-              linkText={'FAQ'}
+              url={'/let-us-help'}
+              linkText={'Let us Help'}
             />
             <NavlinkMain
               styles={styles}
