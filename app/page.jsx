@@ -26,9 +26,12 @@ export default function Home() {
           className={styles.h5}
           style={{ fontWeight: '400' }}>
           Explore a{' '}
-          <span className={styles.homeLink}>
+          <a
+            className={styles.homeLink}
+            href='https://www.beckashouse.com/'
+            target='_blank'>
             Fully Customized Companion Care Home
-          </span>
+          </a>
         </h5>
       </div>
       <YourVision />

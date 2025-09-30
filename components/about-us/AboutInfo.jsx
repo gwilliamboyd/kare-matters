@@ -9,11 +9,18 @@ const AboutInfo = () => {
           'We became experts in advocating needs for our special needs family member and designing her beautiful future out of necessity.'
         }
       />
-      <AboutLine
-        text={
-          'After our niece Becka, was born with porencephaly, we found ourselves navigating an entirely new reality and becoming life-long advocates for her.'
-        }
-      />
+      <p className={styles.aboutLine}>
+        After our niece Becka, was born with{' '}
+        <a
+          className={styles.aboutLink}
+          href='https://my.clevelandclinic.org/health/diseases/6099-porencephaly'
+          target='"_blank'>
+          porencephaly
+        </a>
+        , we found ourselves navigating an entirely new reality and becoming
+        life-long advocates for her.
+      </p>
+
       <AboutLine
         text={
           'Like you, we experienced all the unique joys and challenges of determining a purpose-filled future for her.'
@@ -53,7 +60,8 @@ const AboutInfo = () => {
         Need proof?{' '}
         <a
           className={styles.h5Pink}
-          href='#'>
+          href='https://www.beckashouse.com/'
+          target='_blank'>
           See Becka’s House
         </a>
       </h5>

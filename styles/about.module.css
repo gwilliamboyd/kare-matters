@@ -42,3 +42,7 @@
   align-items: flex-start;
   gap: 3em;
 }
+
+.aboutLink {
+  color: #ffb3b0;
+}

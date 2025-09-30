@@ -114,7 +114,7 @@ const page = () => {
             </p>
             <a
               className={styles.workLink}
-              href='#'>
+              href='mailto:contact@beckashouse.com'>
               Your Long Awaited Sigh of Relief
             </a>
           </div>
