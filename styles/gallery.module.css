@@ -27,3 +27,29 @@
   margin-bottom: 0.75em;
   break-inside: avoid;
 }
+
+@media (max-width: 1150px) {
+  .galleryMaster {
+    padding: 9em 3em 4em;
+  }
+}
+
+@media (max-width: 820px) {
+  .galleryMaster {
+    padding: 9em 2em 4em;
+  }
+
+  .galleryContainer {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 576px) {
+  .galleryMaster {
+    padding: 9em 1em 4em;
+  }
+
+  .galleryContainer {
+    column-count: 1;
+  }
+}
