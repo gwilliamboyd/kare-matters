@@ -1,7 +1,7 @@
 .aboutMaster {
 }
 .aboutDarkWrapper {
-  width: 100vw;
+  width: 100%;
   padding: 8em 0 8em 4em;
   background-color: #253035;
   display: flex;
@@ -45,4 +45,14 @@
 
 .aboutLink {
   color: #ffb3b0;
+}
+
+@media (max-width: 1150px) {
+  .aboutDarkWrapper {
+    padding: 4em 3em;
+  }
+  .aboutInfo {
+    width: 100%;
+    gap: 2em;
+  }
 }

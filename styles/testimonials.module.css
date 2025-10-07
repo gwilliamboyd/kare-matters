@@ -71,6 +71,7 @@
 @media (max-width: 1150px) {
   .testimonialsWrapper {
     width: 90%;
+    gap: 2em;
   }
   .testimonialsInnerWrapper {
     gap: 3em;
