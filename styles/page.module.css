@@ -157,4 +157,12 @@
   .visionCol {
     gap: 0.5em;
   }
+
+  .interiorH2 {
+    font-size: 28px;
+  }
+
+  .pinkDivider {
+    width: 160px;
+  }
 }

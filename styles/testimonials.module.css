@@ -81,7 +81,11 @@
 @media (max-width: 576px) {
   .testimonialsInnerWrapper,
   .testimonialsInnerWrapperDark {
+    padding: 2em 1em;
     height: 560px;
     gap: 1em;
+  }
+  .testimonialsMasterDark {
+    padding: 2em 0;
   }
 }
