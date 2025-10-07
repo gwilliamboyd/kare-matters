@@ -77,3 +77,9 @@
     gap: 3em;
   }
 }
+
+@media (max-width: 576px) {
+  .testimonialsInnerWrapper {
+    height: 560px;
+  }
+}

@@ -137,3 +137,24 @@
     row-gap: 2em;
   }
 }
+
+@media (max-width: 576px) {
+  .h3 {
+    font-size: 22px;
+  }
+  .homeDarkWrapper {
+    padding: 2em;
+  }
+  .visionMaster {
+    padding: 2em;
+    gap: 2em;
+  }
+  .visionThreeCol {
+    width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+  }
+  .visionCol {
+    gap: 0.5em;
+  }
+}
