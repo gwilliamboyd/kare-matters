@@ -115,3 +115,21 @@
 .socketWrapper .socialIcon:hover svg {
   fill: #ffb3b0;
 }
+
+.mobileMenuIcon {
+  font-size: 30px;
+}
+
+@media (max-width: 1150px) {
+  .innerContainer {
+    padding: 0 2em;
+  }
+  .logoContainer {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .logoImage {
+    display: block;
+    height: auto;
+  }
+}
