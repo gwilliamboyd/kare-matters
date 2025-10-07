@@ -67,3 +67,12 @@
   flex-direction: column;
   gap: 1em;
 }
+
+@media (max-width: 1150px) {
+  .testimonialsWrapper {
+    width: 90%;
+  }
+  .testimonialsInnerWrapper {
+    gap: 3em;
+  }
+}
