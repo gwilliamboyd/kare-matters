@@ -13,6 +13,7 @@ import SocialIcon from '../SocialIcon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import useIsMobile from '@/hooks/useIsMobile'
+import MobileMenu from './nav-links/MobileMenu'
 
 const Navbar = () => {
   // check URL to determine nav color
@@ -21,6 +22,8 @@ const Navbar = () => {
 
   const isTablet = useIsMobile(1150)
   const isMobile = useIsMobile(576)
+
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const mobileMenuHandler = () => {
     if (!menuOpen) setMenuOpen(true)
@@ -101,6 +104,13 @@ const Navbar = () => {
                 className={styles.mobileMenuIcon}
                 icon={faBars}
                 onClick={mobileMenuHandler}
+              />
+            )}
+            {menuOpen && (
+              <MobileMenu
+                menuOpen={menuOpen}
+                setMenuOpen={setMenuOpen}
+                mobileMenuHandler={mobileMenuHandler}
               />
             )}
           </div>
