@@ -62,6 +62,10 @@
   cursor: pointer;
 }
 
+.chevronIconDark:hover {
+  cursor: pointer;
+}
+
 .entryWrapper {
   display: flex;
   flex-direction: column;
