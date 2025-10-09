@@ -9,21 +9,21 @@ const VisionThreeCol = () => {
           'Listen to your intuition—and don’t settle. Here’s how we design a purpose-filled future that’s even better than your vision.'
         }
         linkText={'See Our Mission'}
-        linkUrl={'#'}
+        linkUrl={'https://www.beckashouse.com/'}
       />
       <VisionCol
         paragraph={
           'We help parents come back to life. We’ll handle the paperwork, advocacy, companion care, and transition.'
         }
         linkText={'Work With Us'}
-        linkUrl={'#'}
+        linkUrl={'/let-us-help'}
       />
       <VisionCol
         paragraph={
           'Want to know our inspiration for championing beautiful futures? See the passion that propelled us.'
         }
         linkText={'Read More About Us'}
-        linkUrl={'#'}
+        linkUrl={'/about-us'}
       />
     </div>
   )
