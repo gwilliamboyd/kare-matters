@@ -83,7 +83,7 @@ const Navbar = () => {
             )}
             {isTablet ? null : (
               <div className={styles.socials}>
-                <SocialIcon
+                {/* <SocialIcon
                   styles={styles}
                   url={'https://www.facebook.com'}
                   fillColor={'#FFFFFF'}
@@ -96,7 +96,7 @@ const Navbar = () => {
                   fillColor={'#FFFFFF'}
                   site={'instagram'}
                   dimensions={36}
-                />
+                /> */}
               </div>
             )}
             {isTablet && (
