@@ -48,11 +48,6 @@ const Footer = () => {
               url={'/gallery'}
               linkText={'Gallery'}
             />
-            <NavlinkMain
-              styles={styles}
-              url={'/testimonials'}
-              linkText={'Testimonials'}
-            />
           </div>
           <div className={styles.socialsWrapper}>
             {/* <SocialIcon
